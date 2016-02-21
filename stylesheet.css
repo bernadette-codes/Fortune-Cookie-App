@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+    position: relative;
+    min-height: 95%;
+}
+
+body {
+    display: block;
+    background: url(background.jpg) center center / cover no-repeat fixed;
+    padding: 0;
+    margin: 0 0 40px;
+    color: #ffffff !important;
+}
+
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:5px !important; padding-bottom:0 !important;
+    height: 30px;
+}
+
+.navbar {
+    min-height:30px !important;
+}
+
+a {
+    color: #ffffff !important;
+    margin: 5px !important;
+    font-size: 1.25em !important;
+}
+
+a:hover {
+    font-weight: bold !important;
+}
+
+a:not(#home) {
+    border-left: 3px solid #ffffff !important;
+}
+
+#titleFont {
+    font-size: 2.2em;
+    margin-top: 20px;
+}
+
+.messageFont {
+    font-size: 1.75em !important;
+    display: block;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+img {
+    width:200px;
+    display: block;
+    margin: 20px auto 30px;
+
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 550px) {
+    #titleFont {
+        font-size: 2em;
+        margin-top: 18px;
+    }
+    .messageFont {
+        font-size: 1.6em !important;
+    }
+    img {
+        width: 170px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    a {
+        font-size: 1em !important;
+    }
+    #titleFont {
+        font-size: 1.8em;
+        margin-top: 18px;
+    }
+    .messageFont {
+        font-size: 1.4em !important;
+    }
+    img {
+        width: 150px;
+    }
+}
