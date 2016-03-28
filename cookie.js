@@ -1,9 +1,10 @@
 /**
- * Created by Bernadette on 3/8/2016.
+ * Created by Bernadette on 2/8/2016.
  */
+
 // Copyright Year
-var d = new Date();
-var n = d.getFullYear();
+var d = new Date(),
+    n = d.getFullYear();
 document.getElementById("year").innerHTML = n;
 
 //Window height
@@ -41,6 +42,6 @@ msg[20] = "Generosity will repay itself sooner than you imagine.";
 var i = Math.floor((Math.random() * 20) + 1);
 
 function fortune() {
-    var x = document.getElementById("show")
+    var x = document.getElementById("show");
     x.innerHTML = (msg[i]);
 }
