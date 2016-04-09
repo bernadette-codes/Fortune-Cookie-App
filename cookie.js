@@ -1,23 +1,23 @@
-/**
- * Created by Bernadette on 2/8/2016.
- */
 
 // Copyright Year
 var d = new Date(),
     n = d.getFullYear();
 document.getElementById("year").innerHTML = n;
 
-//Window height
-$(document).ready(function(){
-    var windowHeight=$(window).height();
-    $(window).height(windowHeight+"px");
+//Variables
+var windowHeight=$(window).height(),
+    windowWidth=$(window).width(),
+    msg = new Array(),
+    i = Math.floor((Math.random() * 20) + 1),
+    x = document.getElementById("show");
 
-    var windowWidth=$(window).width();
+// Window height
+$(document).ready(function(){
+    $(window).height(windowHeight+"px");
     //alert(windowWidth);
 });
 
-
-var msg = new Array();
+// Quotes
 msg[1] = "A smile is your passport into the hearts of others.";
 msg[2] = "What ever your goal is in life, embrace it, visualize it, and for it will be yours.";
 msg[3] = "You cannot love life until you live the life you love.";
@@ -39,9 +39,7 @@ msg[18] = "We can't help everyone. But everyone can help someone.";
 msg[19] = "All the water in the world can't sink a ship unless it gets inside.";
 msg[20] = "Generosity will repay itself sooner than you imagine.";
 
-var i = Math.floor((Math.random() * 20) + 1);
-
+// Call Quotes
 function fortune() {
-    var x = document.getElementById("show");
     x.innerHTML = (msg[i]);
 }
