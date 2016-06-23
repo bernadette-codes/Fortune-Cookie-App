@@ -7,44 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Bernadette Engleman">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <title>Fortune Cookie</title>
 </head>
 
 <body>
 
 <!-- Home -->
-<nav class="navbar">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <p id="topFont"><a class="navbar-brand" href="http://www.bernadetteengleman.com/" id="home">Home</a>
-            <a class="navbar-brand" href="fortunecookie.html">Get another fortune cookie</a></p>
-        </div>
+<nav class="navbar container-fluid">
+    <div class="navbar-header">
+        <p id="topFont"><a class="navbar-brand" href="http://www.bernadetteengleman.com/" id="home">Home</a>
     </div>
 </nav>
 
+<main class="container">
 
-<div class="container">
     <h1 class="text-center" id="titleFont">Click Fortune Cookie</h1>
-    <img src="cookie.jpg" alt="fortune cookie" onclick="fortune()">
-
-
+    <img src="cookie.jpg" alt="fortune cookie" id="fortune">
 
     <p id="show" class="messageFont text-center"></p>
 
-</div>
+</main>
 
 <footer class="container-fluid text-center">
-    <div>
-        <p>Copyright © <span id="year"></span> Bernadette Engleman. All rights reserved.</p>
-    </div>
+    <p>Copyright © <span id="year"></span> Bernadette Engleman. All rights reserved.</p>
 </footer>
 
-<script type="text/javascript" src="cookie.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="cookie.js"></script>
 
 </body>
 
 </html>
-
