@@ -8,14 +8,8 @@ document.getElementById("year").innerHTML = n;
 var windowHeight=$(window).height(),
     windowWidth=$(window).width(),
     msg = new Array(),
-    i = Math.floor((Math.random() * 20) + 1),
+    i,
     x = document.getElementById("show");
-
-// Window height
-$(document).ready(function(){
-    $(window).height(windowHeight+"px");
-    //alert(windowWidth);
-});
 
 // Quotes
 msg[1] = "A smile is your passport into the hearts of others.";
@@ -39,7 +33,20 @@ msg[18] = "We can't help everyone. But everyone can help someone.";
 msg[19] = "All the water in the world can't sink a ship unless it gets inside.";
 msg[20] = "Generosity will repay itself sooner than you imagine.";
 
+$(document).ready(function(){
+    // Window height
+    $(window).height(windowHeight+"px");
+
+    //alert(windowWidth);
+
+    // Call Quotes
+    $(".fortune").on('click', function() {
+        fortune();
+    });
+});
+
 // Call Quotes
 function fortune() {
+    i = Math.floor((Math.random() * 20) + 1);
     x.innerHTML = (msg[i]);
 }
