@@ -14,43 +14,43 @@ body {
     color: #ffffff;
 }
 
+/* Home Link */
 nav.navbar {
     min-height: 30px;
 }
 
-p#topFont a.navbar-brand {
+a.navbar-brand {
+    color: #ffffff;
+    margin: 5px;
+    font-size: 1.25em;
     padding-top: 5px;
     padding-bottom: 0;
     height: 30px;
 }
 
-p#topFont a {
-    color: #ffffff;
-    margin: 5px;
-    font-size: 1.25em;
-}
-
-p#topFont a:hover {
+a.navbar-brand:hover {
     font-weight: bold;
 }
 
-#titleFont {
+/* Fortune Cookie Title */
+.titleFont {
     font-size: 2.2em;
     margin-top: 20px;
 }
 
-p#show.messageFont {
+/* Quote Line */
+#show {
     font-size: 1.75em;
     display: block;
     margin-left: 15px;
     margin-right: 15px;
 }
 
+/* Cookie Image */
 img {
     width:200px;
     display: block;
     margin: 20px auto 30px;
-
 }
 
 footer {
@@ -63,29 +63,36 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
-    #titleFont {
+    /* Fortune Cookie Title */
+    .titleFont {
         font-size: 2em;
         margin-top: 18px;
     }
-    p#show.messageFont {
+    /* Quote Line */
+    #show {
         font-size: 1.6em;
     }
+    /* Cookie Image */
     img {
         width: 170px;
     }
 }
 
 @media screen and (max-width: 380px) {
-    p#topFont a {
+    /* Home Link */
+    a.navbar-brand {
         font-size: 1em;
     }
-    #titleFont {
+    /* Fortune Cookie Title */
+    .titleFont {
         font-size: 1.8em;
         margin-top: 18px;
     }
-    p#show.messageFont {
+    /* Quote Line */
+    #show {
         font-size: 1.4em;
     }
+    /* Cookie Image */
     img {
         width: 150px;
     }
