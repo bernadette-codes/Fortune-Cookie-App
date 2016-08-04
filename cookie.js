@@ -46,6 +46,6 @@ $(document).ready(function(){
 
 // Call Quotes
 function fortune() {
-    i = Math.floor((Math.random() * 19) + 1);
+    i = Math.floor((Math.random() * 20));
     x.innerHTML = (msg[i]);
 }
