@@ -45,9 +45,10 @@ $(document).ready(function(){
 
 // Call Quotes
 function fortune() {
-    if($('#show')!=null) {
-        $('#show').hide();
+    var show = $('#show');
+    if(show != null) {
+        show.hide();
     }
     i = Math.floor((Math.random() * 20));
-    $('#show').fadeIn("slow").text(msg[i]);
+    show.fadeIn("slow").text(msg[i]);
 }
