@@ -7,7 +7,6 @@ document.getElementById("year").innerHTML = n;
 //Variables
 var windowHeight=$(window).height(),
     windowWidth=$(window).width(),
-    x = document.getElementById("show"),
     i,
     // Quotes
     msg = [
@@ -46,6 +45,9 @@ $(document).ready(function(){
 
 // Call Quotes
 function fortune() {
+    if($('#show')!=null) {
+        $('#show').hide();
+    }
     i = Math.floor((Math.random() * 20));
-    x.innerHTML = (msg[i]);
+    $('#show').fadeIn("slow").text(msg[i]);
 }
