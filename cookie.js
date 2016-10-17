@@ -1,4 +1,3 @@
-
 // Copyright Year
 var d = new Date(),
     n = d.getFullYear();
@@ -31,6 +30,16 @@ var windowHeight=$(window).height(),
         "All the water in the world can't sink a ship unless it gets inside.",
         "Generosity will repay itself sooner than you imagine."];
 
+// Call Quotes
+function fortune() {
+    var show = $('#show');
+    if(show != null) {
+        show.hide();
+    }
+    i = Math.floor((Math.random() * 20));
+    show.fadeIn("slow").text(msg[i]);
+}
+
 $(document).ready(function(){
     // Window height
     $(window).height(windowHeight+"px");
@@ -42,13 +51,3 @@ $(document).ready(function(){
         fortune();
     });
 });
-
-// Call Quotes
-function fortune() {
-    var show = $('#show');
-    if(show != null) {
-        show.hide();
-    }
-    i = Math.floor((Math.random() * 20));
-    show.fadeIn("slow").text(msg[i]);
-}
