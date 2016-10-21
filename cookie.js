@@ -3,9 +3,10 @@ var d = new Date(),
     n = d.getFullYear();
 document.getElementById("year").innerHTML = n;
 
-//Variables
+// Variables
 var windowHeight=$(window).height(),
     windowWidth=$(window).width(),
+    // Random Number
     i,
     // Quotes
     msg = [
@@ -33,10 +34,14 @@ var windowHeight=$(window).height(),
 // Call Quotes
 function fortune() {
     var show = $('#show');
+
+    // Remove Currently Displayed Quote
     if(show != null) {
         show.hide();
     }
     i = Math.floor((Math.random() * 20));
+
+    // Show Selected Quote
     show.fadeIn("slow").text(msg[i]);
 }
 
