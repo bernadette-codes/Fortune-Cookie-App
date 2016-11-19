@@ -7,7 +7,7 @@ var windowHeight = $(window).height(),
     windowWidth = $(window).width();
 
 // Call Quotes
-function fortune() {
+function showFortune() {
     var show = $('#show'),
         // Random Number
         i,
@@ -51,7 +51,8 @@ $(document).ready(function(){
     //alert(windowWidth);
 
     // Call Quotes
-    $(".fortune").on('click', function() {
-        fortune();
+    var fortune = $(".fortune");
+    fortune.on('click', function() {
+        showFortune();
     });
 });
