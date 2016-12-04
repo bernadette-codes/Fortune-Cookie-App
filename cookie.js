@@ -32,7 +32,8 @@ function showFortune() {
             "Do not follow where the path may lead. Go where there is no path...and leave a trail.",
             "We can't help everyone. But everyone can help someone.",
             "All the water in the world can't sink a ship unless it gets inside.",
-            "Generosity will repay itself sooner than you imagine."];
+            "Generosity will repay itself sooner than you imagine."
+        ];
 
     // Remove Currently Displayed Quote
     if(show != null) {
@@ -42,7 +43,7 @@ function showFortune() {
 
     // Show Selected Quote
     show.fadeIn("slow").text(msg[i]);
-}
+} // end showFortune function
 
 $(document).ready(function(){
     // Window height
@@ -55,4 +56,4 @@ $(document).ready(function(){
     fortune.on('click', function() {
         showFortune();
     });
-});
+}); // end ready
