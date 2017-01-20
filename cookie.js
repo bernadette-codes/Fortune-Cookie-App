@@ -8,7 +8,7 @@ var windowHeight = $(window).height(),
 
 // Call Quotes
 function showFortune() {
-    var show = $('#show'),
+    var $show = $('#show'),
         // Random Number
         i,
         // Quotes
@@ -36,24 +36,19 @@ function showFortune() {
         ];
 
     // Remove Currently Displayed Quote
-    if(show != null) {
-        show.hide();
+    if($show != null) {
+        $show.hide();
     }
     i = Math.floor((Math.random() * 20));
 
     // Show Selected Quote
-    show.fadeIn("slow").text(msg[i]);
+    $show.fadeIn("slow").text(msg[i]);
 } // end showFortune function
 
 $(document).ready(function(){
-    // Window height
-    $(window).height(windowHeight+"px");
-
-    //alert(windowWidth);
-
     // Call Quotes
-    var fortune = $(".fortune");
-    fortune.on('click', function() {
+    var $fortune = $(".fortune");
+    $fortune.on('click', function() {
         showFortune();
     });
 }); // end ready
