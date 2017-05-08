@@ -47,7 +47,7 @@ function showFortune() {
 
 $(document).ready(function(){
     // Call Quotes
-    var $fortune = $(".fortune");
+    var $fortune = $("#fortune");
     $fortune.on('click', function() {
         showFortune();
     });
